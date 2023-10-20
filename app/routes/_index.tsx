@@ -13,7 +13,7 @@ const Changes = array(
     description: string(),
     occurrence: string(),
     type: enums(changeTypes),
-  })
+  }),
 );
 
 export const loader = () => {
@@ -25,7 +25,7 @@ export const loader = () => {
     try {
       const rawContent = fs.readFileSync(
         path.join(process.cwd(), "content", contentPath),
-        { encoding: "utf-8" }
+        { encoding: "utf-8" },
       );
 
       let validatedContent;
@@ -61,7 +61,7 @@ export default function Index() {
     }
 
     return changes.filter((change) =>
-      selectedChangeTypes.includes(change.type)
+      selectedChangeTypes.includes(change.type),
     );
   }, [selectedChangeTypes, changes]);
 
@@ -69,7 +69,7 @@ export default function Index() {
     let updatedChangeTypes = selectedChangeTypes;
     if (selectedChangeTypes.includes(changeType)) {
       updatedChangeTypes = updatedChangeTypes.filter(
-        (type) => type !== changeType
+        (type) => type !== changeType,
       );
     } else {
       updatedChangeTypes.push(changeType);

@@ -6,7 +6,8 @@
     "dev": "remix dev --manual",
     "build": "remix build",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "format": "prettier app content --write"
   },
   "dependencies": {
     "@remix-run/node": "^2.1.0",
@@ -23,6 +24,9 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "eslint": "^8.38.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   },
   "engines": {
