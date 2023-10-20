@@ -2,11 +2,13 @@
   {
     "title": "Launched Personal Website",
     "description": "Launched my personal website to showcase my projects, share my experiences, and publish my writing.",
-    "occurrence": "2023/10/23"
+    "occurrence": "2023/10/23",
+    "type": "Projects"
   },
   {
     "title": "Started at UW-Madison",
     "description": "Started my education at University of Wisconsin-Madison, where I'll be pursuing a degree in Computer Science.",
-    "occurrence": "2023/09/06"
+    "occurrence": "2023/09/06",
+    "type": "Me"
   }
 ]
