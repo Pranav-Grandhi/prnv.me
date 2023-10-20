@@ -12,6 +12,13 @@ import stylesheet from "~/tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
+  {
+    rel: "preload",
+    href: "/fonts/Inter.var.woff2",
+    as: "font",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  },
 ];
 
 export default function App() {
@@ -23,7 +30,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="antialiased">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
